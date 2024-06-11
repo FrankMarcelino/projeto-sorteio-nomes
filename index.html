@@ -4,13 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sorteio de Leitor do Paragrafo</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Sorteio de Nomes</title>
   <!-- Adicione links para folhas de estilo (CSS) aqui, se necessário -->
 </head>
 
 <body>
   <header>
-    <h1>Sorteio de Nomes</h1>
+    <h1>Sortei o leitor do paragrafo</h1>
     <!-- Adicione um logotipo ou título adicional aqui -->
   </header>
 
@@ -20,11 +21,18 @@
 
   <main>
     <!-- Conteúdo principal do seu site -->
-    <h2>Participantes</h2>
+    <h2>Leitores</h2>
     <ul>
+      <!-- insira aqui os nomes dos participantes -->
+      <label for="nome" class="nome">Nome:
+        <input type="text" id="nome">
+      </label>
+      <button onclick="adicionarNome()">Adicionar</button>
       <!-- Lista de nomes dos participantes -->
-      <li>Nome 1</li>
-      <li>Nome 2</li>
+      <ul id="listaNomes">
+
+      </ul>
+
       <!-- Adicione mais nomes conforme necessário -->
     </ul>
 
@@ -40,5 +48,6 @@
 
   <!-- Adicione scripts (JavaScript) aqui, se necessário -->
 </body>
+<script src="script.js"></script>
 
 </html>
