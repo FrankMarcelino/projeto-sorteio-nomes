@@ -2,3 +2,7 @@ body {
   background-color: black;
   color: white;
 }
+
+#adicionaNomes {
+  margin-bottom: 30px;
+}
