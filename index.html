@@ -6,52 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Sorteio de Nomes</title>
-  <!-- Adicione links para folhas de estilo (CSS) aqui, se necessário -->
 </head>
 
 <body>
   <header>
-    <h1>Sortei o leitor do paragrafo</h1>
-    <!-- Adicione um logotipo ou título adicional aqui -->
+    <h1>Sortei o Proximo:</h1>
+
   </header>
 
-  <nav>
-    <!-- Adicione links de navegação (se houver) -->
-  </nav>
-
   <main>
-    <!-- Conteúdo principal do seu site -->
-    <h2>Leitores</h2>
-    <ul>
-      <!-- insira aqui os nomes dos participantes -->
+    <div class="containerLeitor">
+      <h2>Leitor</h2>
       <div id="adicionaNomes">
         <label for="nome" class="nome">Nome:
           <input type="text" id="nome">
           <button onclick="adicionarNome()">Adicionar</button>
-      
         </label>
       </div>
-      
-      <!-- Lista de nomes dos participantes -->
       <ul id="listaNomes">
-
       </ul>
+      <button id="sortear" onclick="exibirNomeSorteado()">Sortear Leitor</button>
+    </div>
+    <div class="containerCommiter">
+      <h2>Comentar</h2>
+     
+      <ul id="listaNomes">
+      </ul>
+      <button id="sortear" onclick="exibirNomeSorteado()">Sortear Comentario</button>
+    </div>
 
-      <!-- Adicione mais nomes conforme necessário -->
-    </ul>
-
-    <!-- Botão para sortear um nome -->
-    <button id="sortear" onclick="exibirNomeSorteado()">Sortear Leitor</button>
-        
   </main>
 
   <footer>
     <p>© 2024 Sorteio de Nomes</p>
-    <!-- Informações de contato ou outros detalhes no rodapé -->
+
   </footer>
 
-  <!-- Adicione scripts (JavaScript) aqui, se necessário -->
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
