@@ -48,7 +48,7 @@ function exibirNomeSorteadoLeitor() {
   if (elementoNomeSorteado) {
     // Altere a cor do elemento (por exemplo, para vermelho)
     elementoNomeSorteado.style.color = 'red';
-    alert("Nome sorteado: " + nome);
+    alert(nome + " Vai ler!");
   } else {
     alert("Nome não encontrado: " + nome);
   }
@@ -71,7 +71,7 @@ function exibirNomeSorteadoComentario() {
   if (elementoNomeSorteado) {
     // Altere a cor do elemento (por exemplo, para vermelho)
     elementoNomeSorteado.style.color = 'green';
-    alert("Nome sorteado: " + nome);
+    alert(nome + " Vai comentar!");
   } else {
     alert("Nome não encontrado: " + nome);
   }
