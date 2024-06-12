@@ -1,5 +1,6 @@
 const nomesAdicionadosLeitor = [];
 const nomesAdicionadosComentario = [];
+
 function adicionarNome() {
   
   const inputNome = document.getElementById('nome');
@@ -13,8 +14,8 @@ function adicionarNome() {
     novoItemComentario.textContent = nome;
 
     // Atribuir o valor do nome como ID e class
-    novoItemLeitor.id = nome;
-    novoItemComentario.id = nome;
+    novoItemLeitor.id = nome+'leitor';
+    novoItemComentario.id = nome+'comentario';
     novoItemLeitor.className = 'leitores';
     novoItemComentario.className = 'comentarios';
 
@@ -42,7 +43,7 @@ function sortearNomeLeitor() {
 
 function exibirNomeSorteadoLeitor() {
   const nome = sortearNomeLeitor();
-  const elementoNomeSorteado = document.getElementById(nome);
+  const elementoNomeSorteado = document.getElementById(nome+'leitor');
 
   if (elementoNomeSorteado) {
     // Altere a cor do elemento (por exemplo, para vermelho)
@@ -65,7 +66,7 @@ function sortearNomeComentario() {
 
 function exibirNomeSorteadoComentario() {
   const nome = sortearNomeComentario();
-  const elementoNomeSorteado = document.getElementById(nome);
+  const elementoNomeSorteado = document.getElementById(nome+'comentario');
 
   if (elementoNomeSorteado) {
     // Altere a cor do elemento (por exemplo, para vermelho)
