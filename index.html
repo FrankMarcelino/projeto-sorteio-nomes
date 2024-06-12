@@ -5,40 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>Sorteio de Nomes</title>
+  <title>Escolha aleatoria de Nomes</title>
 </head>
 
 <body>
   <header>
-    <h1>Sortei o Proximo:</h1>
+    <h1>Adicione o nome dos participantes</h1>
 
   </header>
 
   <main>
+    <div id="adicionaNomes">
+      <label for="nome" class="nome">Nome:
+        <input type="text" id="nome">
+        <button onclick="adicionarNome()">Adicionar</button>
+      </label>
+    </div>
     <div class="containerLeitor">
       <h2>Leitor</h2>
-      <div id="adicionaNomes">
-        <label for="nome" class="nome">Nome:
-          <input type="text" id="nome">
-          <button onclick="adicionarNome()">Adicionar</button>
-        </label>
-      </div>
-      <ul id="listaNomes">
+     
+      <ul id="listaNomesLeitor">
       </ul>
-      <button id="sortear" onclick="exibirNomeSorteado()">Sortear Leitor</button>
+      
+      <button id="sortear" onclick="exibirNomeSorteadoLeitor()">Escolher Leitor</button>
     </div>
     <div class="containerCommiter">
-      <h2>Comentar</h2>
+      <h2>Comentario</h2>
      
-      <ul id="listaNomes">
+      <ul id="listaNomesComentario">
       </ul>
-      <button id="sortear" onclick="exibirNomeSorteado()">Sortear Comentario</button>
+      <button id="sortear" onclick="exibirNomeSorteadoComentario()">Escolher Comentario</button>
     </div>
 
   </main>
 
   <footer>
-    <p>© 2024 Sorteio de Nomes</p>
+    <p>© 2024 Escolha aleatoria de Nomes</p>
 
   </footer>
 
