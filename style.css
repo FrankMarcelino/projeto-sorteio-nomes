@@ -1,6 +1,16 @@
 body {
   background-color: black;
   color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+main {
+  margin-left: 30px;
 }
 
 #adicionaNomes {
